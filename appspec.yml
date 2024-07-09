@@ -4,9 +4,12 @@ os: linux
 hooks:
   ApplicationStop:
     - location: scripts/containerstop.sh
-      timeout: 300
+      timeout: 100
       runas: root
   AfterInstall:
     - location: scripts/containerstart.sh
-      timeout: 300
+      timeout: 100
       runas: root
+      
+
+
