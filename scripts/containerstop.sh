@@ -1,3 +1,4 @@
 #!/bin/bash
 set -e
-echo "HI"
+containerid='docker ps | awk -f " " '{print $1}''
+docker rm -f $containerid
