@@ -5,4 +5,4 @@ set -e
 docker pull muneendrasingam/python-app
 
 # Run the Docker image as a container
-docker run -d -p 5000:5000 muneendrasingam/python-app
+docker run -d -p 6000:6000 muneendrasingam/python-app
