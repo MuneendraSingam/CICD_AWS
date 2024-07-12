@@ -1,3 +1,5 @@
 #!/bin/bash
 set -e
-echo "Hi"
+
+# Stop all running containers
+docker stop $(docker ps -q) || echo "No running containers to stop"
